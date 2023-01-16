@@ -7,7 +7,7 @@ Electricity in the EU is traded both on the exchange and over-the-counter (OTC) 
 
 The dataset provided by SMARD, the information platform of the Bundesnetzagentur on the electricity market. It contains information on the following markets:
 - Germany/Luxembourg (De-Lu)
-- Germany/Luxembourg Neighbors
+- De-Lu Neighbors
 - Belgium
 - Denmark 1 & 2
 - France
@@ -40,13 +40,21 @@ Violin plots, such as the ones in Figure 1.2 are useful way to gain insight into
 
 > Figure 1.2: The distribution of market clearing prices.
 
+Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. The Netherlands, Sweden and Hungary all exhibit the greatest figures, each with an average daily spread of over 200 €/MWh.
+
+<p align='center'>
+  <img src='figures/ave-spread-22.jpeg' width='600'>
+</p>
+
+> Figure 1.3: The average daily price spread.
+
 Every market inspected in this analysis operates on a bimodal distribution, with the first peak occuring around 9am and the second at 8pm. This makes them ideal markets for dual-cycle batteries, with one cycle perfromed in the morning and one in the evening. Interestingly, whilst almost every country has their second peak at 8pm or later, Britain's falls earlier.
 
 <p align='center'>
   <img src='figures/hour-aves-22.jpeg' width='600'>
 </p>
 
-> Figure 1.2: The average price profile throughout the day.
+> Figure 1.4: The average price profile throughout the day.
 
 Interactive plots of all the figures in Section 1 can be found as HTML files in in the foler `figures`.
 
