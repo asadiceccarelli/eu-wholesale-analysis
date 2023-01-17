@@ -61,5 +61,27 @@ Interactive plots of all the figures in Section 1 can be found as HTML files in 
 
 ## 2. Revenue analysis
 
+### 1 hour battery potential revenue
+
+The maximum revenue possible in 2022 is calculated by simply subtracting the daily trough from the peak and summing over the course of the year (the day is split into AM/PM for dual cycle). It should be noted that this revenue is only possible with a perfect model for forecasting the DA clearing prices, and this analysis does not take into account the state of the battery left from the day prior i.e. in reality a discharged battery cannot discharge again in the early morning of the following day.
+
+<p align='center'>
+  <img src='figures/1-hour-rev.jpeg' width='600'>
+</p>
+
+> Fig 2.1: Potential revenue for a 1 hour battery in 2022
+
+### 2 hour battery revenue for preset flow times
+
+A different approach is taken when calculating the revenue for a two hour battery. By inspecting the price profile of each market in Figure 1.4, two hour charging and discharging times are set for the entirety of the year and the revenues calculated from this. For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, although there is a slight variation. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
+
+<p align='center'>
+  <img src='figures/1-hour-rev.jpeg' width='600'>
+</p>
+
+> Fig 2.2: Revenue for a 2 hour battery in 2022 with preset flow times
+
+This figure can almost be thought of as a minimum revenue, as requires very little anlysis prior to setting the times and involves no efforts to varying the flow times depending on external factors, such as seasonal and weekend differences. With a simple forecasting model adjusting for various other exogenous factors, the revenue will be greater.
+
 
 ## 3. Comments
