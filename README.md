@@ -63,7 +63,7 @@ Box plots, such as the ones in Figure 1.3, are useful way to gain insight into t
 
 > Figure 1.3: The distribution of market clearing prices.
 
-Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. The Netherlands, Sweden and Hungary all exhibit the greatest figures, each with an average daily spread of over 200 €/MWh.
+Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. Estonia has the largest spread at an average of 245 €/MWh a day, and Norway 4 has the lowest at 22 €/MWh.
 
 <p align='center'>
   <img src='figures/ave-spread-22.jpeg' width='800'>
