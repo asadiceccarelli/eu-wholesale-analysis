@@ -94,9 +94,9 @@ The maximum revenue possible in 2022 is calculated by simply subtracting the dai
 
 > Fig 2.1: Potential revenue for a 1 hour battery in 2022
 
-### 2 hour battery revenue for preset flow times
+### 1 hour battery revenue for preset flow times
 
-A different approach is taken when calculating the battery revenue in 2022. By inspecting the price profile of each market in Figure 1.5, charging and discharging hours are set for the entirety of the year and the revenues calculated from this. The price of most markets dip between 3 and 4 in the morning and peak between 7 and 8 in the evening, although there is some variation. 
+A different approach is taken when calculating the battery revenue in 2022. By inspecting the price profile of each market in Figure 1.5, charging and discharging hours are set for the entirety of the year and the revenues calculated from this. The price of most markets dip between 3 and 4 in the morning and peak between 7 and 8 in the evening, although there is some variation. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
 
 <p align='center'>
   <img src='figures/1-hour-rev.jpeg' width='1000'>
@@ -104,18 +104,18 @@ A different approach is taken when calculating the battery revenue in 2022. By i
 
 > Fig 2.2: Revenue for a 1 hour battery in 2022 with preset flow times
 
+This figure can almost be thought of as a minimum revenue, as requires very little anlysis prior to setting the times and involves no efforts to varying the flow times depending on external factors, such as seasonal and weekend differences. With a simple forecasting model adjusting for various other exogenous factors, the revenue will be greater.
+
 
 ### 2 hour battery revenue for preset flow times
 
-For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, but again, there is a slight variation between markets. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
+For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, but again, there is a slight variation between markets.
 
 <p align='center'>
   <img src='figures/2-hour-rev.jpeg' width='1000'>
 </p>
 
 > Fig 2.3: Revenue for a 2 hour battery in 2022 with preset flow times
-
-This figure can almost be thought of as a minimum revenue, as requires very little anlysis prior to setting the times and involves no efforts to varying the flow times depending on external factors, such as seasonal and weekend differences. With a simple forecasting model adjusting for various other exogenous factors, the revenue will be greater.
 
 
 ## 3. Comments
