@@ -5,7 +5,7 @@ Electricity in the EU is traded both on the exchange and over-the-counter (OTC) 
 
 ## 1. Initial inspection of data
 
-The dataset provided by SMARD, the information platform of the Bundesnetzagentur on the electricity market. It contains information on the following markets:
+The dataset containing information on the majority of the markets is provided by SMARD, the information platform of the Bundesnetzagentur on the electricity market. It contains information on the following markets:
 - Germany/Luxembourg (De-Lu)
 - De-Lu Neighbors
 - Belgium
@@ -22,7 +22,7 @@ The dataset provided by SMARD, the information platform of the Bundesnetzagentur
 - Slovenia
 - Hungary
 
-All the clearing prices are given in €/MWh, and data from EPEX GB 60min DA prices are merged into this DataFrame.
+GB 60min DA data from EPEX and Greek DAM (DA) data from Entsoe is also merged into this DataFrame. All the clearing prices is converted if need be and given in €/MWh. Norway zones 1, 2, 5, Norway zones 3, 4, Sweden zones 1, 2 and Sweden zones 2, 3 are all very similar and so only one of each group will be included in the anlaysis. For Italy, although there is zonal pricing in paying for supply, the PUN (national price) will be used to simplify matters - this is a fair simplication as the PUN is the consumption weghted average of all the zonal prices.
 
 Although a convoluted plot, Figure 1.1 demonstrates that all the markets across Europe had fairly lower prices with little instability, however this all changes in the latter stages of 2021. All markets have become extremely volatile and express roughly the same trends (see `figures/da-prices.html` for further inspection into each market).
 
