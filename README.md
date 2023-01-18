@@ -50,7 +50,7 @@ Although a convoluted plot, Figure 1.1 demonstrates that all the markets across 
 A correlation matrix is calculated using the Pearson product-moment correlation coefficient to measure the extent of linear correlation between the markets in 2022. This can be represented in a heatmap, where the lighter colours reflect a positive correlation between the markets, and the darker colours no correaltion. None of the markets have a negative correlation of any significance, as to be expected.
 
 <p align='center'>
-  <img src='figures/heatmap-22.jpeg' width='600'>
+  <img src='figures/heatmap-22.jpeg' width='800'>
 </p>
 
 > Figure 1.2: A heatmap representing the correlation between markets.
@@ -58,32 +58,26 @@ A correlation matrix is calculated using the Pearson product-moment correlation 
 Box plots, such as the ones in Figure 1.3, are useful way to gain insight into the locality, spread and skewness of of datasets by representing each series with quartiles. Comparisons can easily be made and the differences highlighted, e.g. Slovena has a much longer profile than Spain, indicating the potential for more revenue when trading due to the large spread. It should be noted that box plots also include 'whiskers' which represent the range of values, however as several markets contain prices upwards of 2500 €/MWh, the x axis has been limited in order to allow for greater clarity of the quartiles.
 
 <p align='center'>
-  <img src='figures/violin-22.jpeg' width='1000'>
+  <img src='figures/boxplot-22.jpeg' width='800'>
 </p>
 
 > Figure 1.3: The distribution of market clearing prices.
 
+Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. The Netherlands, Sweden and Hungary all exhibit the greatest figures, each with an average daily spread of over 200 €/MWh.
+
 <p align='center'>
-  <img src='figures/ave-spread-22.jpeg' width='600'>
+  <img src='figures/ave-spread-22.jpeg' width='800'>
 </p>
 
 > Figure 1.4: The average daily price spread.
 
-Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. The Netherlands, Sweden and Hungary all exhibit the greatest figures, each with an average daily spread of over 200 €/MWh.
-
-<p align='center'>
-  <img src='figures/ave-spread-22.jpeg' width='600'>
-</p>
-
-> Figure 1.3: The average daily price spread.
-
 Every market inspected in this analysis operates on a bimodal distribution, with the first peak occuring around 9am and the second at 8pm. This makes them ideal markets for dual-cycle batteries, with one cycle perfromed in the morning and one in the evening. Interestingly, whilst almost every country has their second peak at 8pm or later, Britain's falls earlier.
 
 <p align='center'>
-  <img src='figures/hour-aves-22.jpeg' width='600'>
+  <img src='figures/hour-aves-22.jpeg' width='800'>
 </p>
 
-> Figure 1.4: The average price profile throughout the day.
+> Figure 1.5: The average price profile throughout the day.
 
 Interactive plots of all the figures in Section 1 can be found as HTML files in in the foler `figures`.
 
@@ -102,7 +96,7 @@ The maximum revenue possible in 2022 is calculated by simply subtracting the dai
 
 ### 2 hour battery revenue for preset flow times
 
-A different approach is taken when calculating the revenue for a two hour battery. By inspecting the price profile of each market in Figure 1.4, two hour charging and discharging times are set for the entirety of the year and the revenues calculated from this. For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, although there is a slight variation. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
+A different approach is taken when calculating the revenue for a two hour battery. By inspecting the price profile of each market in Figure 1.5, two hour charging and discharging times are set for the entirety of the year and the revenues calculated from this. For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, although there is a slight variation. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
 
 <p align='center'>
   <img src='figures/1-hour-rev.jpeg' width='1000'>
