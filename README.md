@@ -99,7 +99,7 @@ The maximum revenue possible in 2022 is calculated by simply subtracting the dai
 A different approach is taken when calculating the revenue for a two hour battery. By inspecting the price profile of each market in Figure 1.5, two hour charging and discharging times are set for the entirety of the year and the revenues calculated from this. For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 discharging, with additional 13:00-15:00 charging and 07:00-09:00 discharging for dual cycles, although there is a slight variation. This circumvents the drawback of the previous analysis which did not take into account the state of the battery at the start of the day, the charging time always occurs first and discharging last each day.
 
 <p align='center'>
-  <img src='figures/1-hour-rev.jpeg' width='1000'>
+  <img src='figures/2-hour-rev.jpeg' width='1000'>
 </p>
 
 > Fig 2.2: Revenue for a 2 hour battery in 2022 with preset flow times
