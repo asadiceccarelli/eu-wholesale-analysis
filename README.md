@@ -23,6 +23,7 @@ The dataset containing information on the majority of the markets is provided by
 - Switzerland
 
 Data from Entsoe for the following countries is also merged into the dataframe:
+- Bulgaria
 - Croatia
 - Estonia
 - Finland
