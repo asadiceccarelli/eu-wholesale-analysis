@@ -38,7 +38,7 @@ Data from Entsoe for the following countries is also merged into the dataframe:
 - Spain
 - Sweden 1, 2 & 3
 
-GB 60min DA data from EPEX is also pulled and merged into this DataFrame. For Italy, although there is zonal pricing in paying for supply, the PUN (national price) will be used to simplify matters - this is a fair simplication as the PUN is the consumption weghted average of all the zonal prices.
+GB 60min DA data from EPEX is also pulled and merged into this DataFrame. For Italy, although there is zonal pricing in paying for supply, the PUN (national price) will be used to simplify matters - this is a fair simplication as the PUN is the consumption weighted average of all the zonal prices.
 
 Although a convoluted plot, Figure 1.1 demonstrates that all the markets across Europe had fairly lower prices with little instability, however this all changes in the latter stages of 2021. All markets have become extremely volatile and express roughly the same trends (see `figures/da-prices.html` for further inspection into each market).
 
@@ -48,7 +48,7 @@ Although a convoluted plot, Figure 1.1 demonstrates that all the markets across 
 
 > Fig 1.1: Average daily clearing price from 2019 to 2022.
 
-A correlation matrix is calculated using the Pearson product-moment correlation coefficient to measure the extent of linear correlation between the markets in 2022. This can be represented in a heatmap, where the lighter colours reflect a positive correlation between the markets, and the darker colours no correaltion. None of the markets have a negative correlation of any significance, as to be expected.
+A correlation matrix is calculated using the Pearson product-moment correlation coefficient to measure the extent of linear correlation between the markets in 2022. This can be represented in a heatmap, where the lighter colours reflect a positive correlation between the markets, and the darker colours no correlation. None of the markets have a negative correlation of any significance, as to be expected.
 
 <p align='center'>
   <img src='figures/heatmap-22.jpeg' width='800'>
@@ -56,7 +56,7 @@ A correlation matrix is calculated using the Pearson product-moment correlation 
 
 > Figure 1.2: A heatmap representing the correlation between markets.
 
-Box plots, such as the ones in Figure 1.3, are useful way to gain insight into the locality, spread and skewness of of datasets by representing each series with quartiles. Comparisons can easily be made and the differences highlighted, e.g. Slovena has a much longer profile than Spain, indicating the potential for more revenue when trading due to the large spread. It should be noted that box plots also include 'whiskers' which represent the range of values, however as several markets contain prices upwards of 2500 €/MWh, the x axis has been limited in order to allow for greater clarity of the quartiles.
+Box plots, such as the ones in Figure 1.3, are useful way to gain insight into the locality, spread and skewness of of datasets by representing each series with quartiles. Comparisons can easily be made and the differences highlighted, e.g. Slovenia has a much longer profile than Spain, indicating the potential for greater revenue when trading due to the large spread. It should be noted that box plots also include 'whiskers' which represent the range of values, however as several markets contain prices upwards of 2500 €/MWh, the x-axis has been limited in order to allow for greater clarity of the quartiles.
 
 <p align='center'>
   <img src='figures/boxplot-22.jpeg' width='800'>
@@ -64,7 +64,7 @@ Box plots, such as the ones in Figure 1.3, are useful way to gain insight into t
 
 > Figure 1.3: The distribution of market clearing prices.
 
-Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, electricity can be bought lower and sold higher, generating more each day. Estonia has the largest spread at an average of 245 €/MWh a day, and Norway 4 has the lowest at 22 €/MWh.
+Larger spreads tend to indicate the potential for higher revenue as if forecasted correctly, power can be bought lower and sold higher, generating more each day. Estonia has the largest spread at an average of 245 €/MWh a day, and Norway 4 has the lowest at 22 €/MWh.
 
 <p align='center'>
   <img src='figures/ave-spread-22.jpeg' width='800'>
@@ -127,9 +127,9 @@ To calculate the revenue for a 4 hour battery, the charging times are set to 02:
   <img src='figures/4-hour-rev.jpeg' width='1000'>
 </p>
 
-> Fig 2.3: Revenue for a 4 hour battery in 2022 with preset flow times.
+> Fig 2.4: Revenue for a 4 hour battery in 2022 with preset flow times.
 
 
 ## 3. Comments
 
-It seems that Eastern European markets tend to yield the greatest returns. Whilst Estonia, Latvia and Lithuania prove to have the largest spreads, and hence the most _potential_ for profit in 2022, it is Romania and Hungary that return the most when anlaysing with preset flow times. This indicates that Estonia, Latvia and Lithuania have a much larger variance in the times at when the mariet price peaks and dips making it more challenging to forecast. Several markets such as the Netherlands see a much greater increase in a additional cycle, indicating that the morning peak is much more significant than others. This can be compared to the GB market, for example, which sees a much smaller increase in revenue with an additional cycle oweing to the fact that the evening peak is so much higher than the morning peak. Anlysing the average price profile of a country is a key factor when deciding how much cycles to run.
+It seems that Eastern European markets tend to yield the greatest returns. Whilst Estonia, Latvia and Lithuania prove to have the largest spreads, and hence the most _potential_ for profit in 2022, it is Romania and Hungary that return the most when anlaysing with preset flow times. This indicates that Estonia, Latvia and Lithuania have a much larger variance in the times at when the mariet price peaks and dips making it more challenging to forecast. Several markets such as the Netherlands see a much greater increase in a additional cycle, indicating that the morning peak is much more significant than others. This can be compared to the GB market, for example, which sees a much smaller increase in revenue with an additional cycle oweing to the fact that the evening peak is so much higher than the morning peak. Anlysing the average price profile of a country is a key factor when deciding how many cycles to run.
