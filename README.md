@@ -92,7 +92,7 @@ The maximum revenue possible in 2022 is calculated by simply subtracting the dai
   <img src='figures/1-hour-potential-rev.jpeg' width='1000'>
 </p>
 
-> Fig 2.1: Potential revenue for a 1 hour battery in 2022
+> Fig 2.1: Potential revenue for a 1 hour battery in 2022.
 
 ### 1 hour battery revenue for preset flow times
 
@@ -102,7 +102,7 @@ A different approach is taken when calculating the battery revenue in 2022. By i
   <img src='figures/1-hour-rev.jpeg' width='1000'>
 </p>
 
-> Fig 2.2: Revenue for a 1 hour battery in 2022 with preset flow times
+> Fig 2.2: Revenue for a 1 hour battery in 2022 with preset flow times.
 
 This figure can almost be thought of as a minimum revenue, as requires very little anlysis prior to setting the times and involves no efforts to varying the flow times depending on external factors, such as seasonal and weekend differences. With a simple forecasting model adjusting for various other exogenous factors, the revenue will be greater.
 
@@ -115,7 +115,20 @@ For the majority of markets this involves 03:00-05:00 charging and 19:00-21:00 d
   <img src='figures/2-hour-rev.jpeg' width='1000'>
 </p>
 
-> Fig 2.3: Revenue for a 2 hour battery in 2022 with preset flow times
+> Fig 2.3: Revenue for a 2 hour battery in 2022 with preset flow times.
+
+
+### 4 hour battery revenue for preset flow times
+
+To calculate the revenue for a 4 hour battery, the charging times are set to 02:00-06:00 (and 12:00-16:00 for dual cycle) and discharging times at 18:00-22:00 (and 07:00-11:00 for dual cycle) for all countries.
+
+<p align='center'>
+  <img src='figures/4-hour-rev.jpeg' width='1000'>
+</p>
+
+> Fig 2.3: Revenue for a 4 hour battery in 2022 with preset flow times.
 
 
 ## 3. Comments
+
+It seems that Eastern European markets tend to yield the greatest returns. Whilst Estonia, Latvia and Lithuania prove to have the largest spreads, and hence the most _potential_ for profit in 2022, it is Romania and Hungary that return the most when anlaysing with preset flow times. This indicates that Estonia, Latvia and Lithuania have a much larger variance in the times at when the mariet price peaks and dips making it more challenging to forecast. Several markets such as the Netherlands see a much greater increase in a additional cycle, indicating that the morning peak is much more significant than others. This can be compared to the GB market, for example, which sees a much smaller increase in revenue with an additional cycle oweing to the fact that the evening peak is so much higher than the morning peak. Anlysing the average price profile of a country is a key factor when deciding how much cycles to run.
