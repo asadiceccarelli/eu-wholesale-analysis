@@ -14,7 +14,6 @@ The dataset containing information on the majority of the markets is provided by
 - France
 - Germany/Luxembourg (De-Lu)
 - Hungary
-- Italy
 - Netherlands
 - Norway 2
 - Poland
@@ -38,7 +37,15 @@ Data from Entsoe for the following countries is also merged into the dataframe:
 - Spain
 - Sweden 1, 2 & 3
 
-GB 60min DA data from EPEX is also pulled and merged into this DataFrame. For Italy, although there is zonal pricing in paying for supply, the PUN (national price) will be used to simplify matters - this is a fair simplication as the PUN is the consumption weighted average of all the zonal prices.
+Finally, data from Gestore dei Mercati Energetici S.p.A (GME) provides information on the different zones in italy:
+- Northern Italy
+- Central North Italy
+- Central South Italy
+- South Italy
+- Sicily
+- Sardinia
+
+GB 60min DA data from EPEX is also pulled and merged into this DataFrame. For Italy, calculations are performed in a slightly different way due to how the market operates - bids are paid at a single national price (PUN) and offers at a zonal prices dependent on the consumption of that zone.
 
 Although a convoluted plot, Figure 1.1 demonstrates that all the markets across Europe had fairly lower prices with little instability, however this all changes in the latter stages of 2021. All markets have become extremely volatile and express roughly the same trends (see `figures/da-prices.html` for further inspection into each market).
 
